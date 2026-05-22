@@ -8,20 +8,7 @@ car2 = Car.new(456, "maruti", 800)
 bike1 = Bike.new(789, "honda", 500)
 bike2 = Bike.new(345, "royal enfield", 700)
 
-# car1.rent_vehicle
-
-# puts "----------------------"
-# car1.calculate_rental_cost(5)
-# puts "----------------------"
-
-# car1.rent_vehicle
-# puts "----------------------"
-
-
 vehicles = [car1, bike1, car2, bike2]
-
-# puts "--------------------"
-
 
 loop do 
   puts "------Vechicle Rental System------"
