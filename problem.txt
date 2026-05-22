@@ -1,0 +1,31 @@
+# Vehicle Rental System
+# Objective: Create a vehicle rental application.
+
+# Requirements
+
+# Create base class Vehicle
+# vehicle_number
+
+# brand
+
+# rental_price
+
+# Create subclasses:
+
+# Car
+
+# Bike 
+
+# Create module RentalCharge
+
+# Functions:
+
+# Rent vehicle
+
+# Return vehicle
+
+# Display available vehicles
+
+# Calculate rental cost
+
+# Handle unavailable vehicle errors.
