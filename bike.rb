@@ -1,4 +1,2 @@
 class Bike < Vehicle
-  
-  
 end
