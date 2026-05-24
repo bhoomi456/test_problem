@@ -13,11 +13,12 @@ vehicles = [car1, bike1, car2, bike2]
 loop do 
   puts "------Vechicle Rental System------"
   
-  puts "Display All Vehicle"
-  puts "Rent Vehicle"
-  puts "Return Vehicle"
-  puts "Display Available Vehicle"
-  puts "Exit"
+  puts "1.Display All Vehicle"
+  puts "2.Rent Vehicle"
+  puts "3.Calculate Rental Cost"
+  puts "4.Return Vehicle"
+  puts "5.Display Available Vehicle"
+  puts "6.Exit"
 
   print "Enter a choice: "
   choice = gets.chomp.to_i
@@ -41,6 +42,14 @@ loop do
     end
 
   when 3
+    puts "Enter a rent days"
+    days = gets.chomp.to_i
+    vehicles.each do |vehicle|
+      vehicle.calculate_rental_cost(days)
+
+    end
+
+  when 4
     puts "Enter Vehicle Number"
     number = gets.chomp.to_i
 
@@ -51,7 +60,7 @@ loop do
       puts "No vehicle Available"
     end
 
-  when 4
+  when 5
     available_vehicle = vehicles.select {|v| v.available?}
     if available_vehicle.empty?
       puts "No Available Vehicles"
@@ -61,7 +70,7 @@ loop do
       end
     end
 
-  when 5
+  when 6
     puts "Thank you"
     break
 
